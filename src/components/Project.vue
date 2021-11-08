@@ -1,11 +1,13 @@
 <template>
   <div class="row mx-0 project">
     <div class="col-12 col-sm-12 col-md-9 col-lg-9">
-      <h1 class="project-title">{{ item.title }} <span class="text-end"><i class="fas fa-eye"></i></span></h1>
+      <h1 class="project-title">{{ item.title }} <a :href="item.url" target="_blank" rel="noopener noreferrer"> <span class="text-end"><i class="fas fa-eye"></i></span></a></h1>
       <p class="text-light">Required Skill: {{ item.technology }}</p>
-      <p class="text-light">Type of Work: {{ item.workType }}</p>
+      <p class="text-light"> <span class="type-of-work"> Type of Work:</span> {{ item.workType }}</p>
+      <br>
       <p class="text-light">Client Rating</p>
       <Rating :rating="item.rating" />
+      <br><br>
       <p class="text-light">Client FeedBack</p>
       <p class="text-light " :class="item.feedback.length>100?' text-justify':''" >{{item.feedback}}</p>
     </div>
@@ -46,4 +48,12 @@ export default {
   text-transform: capitalize;
   color: #ff9800;
 }
+.type-of-work{
+  color: #ff9800;
+}
+ @media (min-width: 768px) {
+   .project-img{
+     width: 80%;
+   }
+  }
 </style>

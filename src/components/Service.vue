@@ -10,24 +10,30 @@
         class="text-light d-flex justify-content-center btn"
         v-on:click="toggleShowTools()"
       >
+      <h5>
         <span v-if="showTools">Hide </span>
         <span v-else>View my </span> &nbsp;Tools<i
           class="icon fas fa-arrow-circle-down"
         ></i>
+        </h5>
       </div>
-      <p v-show="showTools" class="card-text text-light">
-        {{ item.tools }}
-      </p>
+      <div v-show="showTools" class="card-text text-light">
+        <Images :images="item.tools"/>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import Images from "@/components/Images.vue";
 export default {
   data() {
     return {
       showTools: false,
     };
+  },
+  components:{
+    Images
   },
   props: {
     item: {

@@ -19,9 +19,9 @@
       <div class="right-side-list">
         <span><i class="fas text-large fa-share-alt"></i></span>
         <span><i class="fas text-large fa-download"></i></span>
-        <span><i class="fas text-large fa-envelope"></i></span>
-        <span class="text-large">fi</span>
-        <span class="font-weight-bold">upwork</span>
+        <a href="mailto:mbilaldanish786@gmail.com" target="_blank" rel="noopener noreferrer" ><span><i class="fas text-large fa-envelope"></i></span></a>
+        <a href="https://www.fiverr.com/users/mbd_word_press" target="_blank"><span class="text-large">fi</span></a>
+        <a href="https://www.upwork.com/freelancers/~012c57fa520c065b47" target="_blank"><span class="font-weight-bold">upwork</span></a>
       </div>
     </div>
   </div>
@@ -68,6 +68,9 @@ export default {
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
+  color: #a1a1a1;
+}
+.right-side-list a{
   color: #a1a1a1;
 }
 .text-large {

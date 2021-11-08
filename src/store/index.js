@@ -9,25 +9,25 @@ export default new Vuex.Store({
       {
         title: 'Web Development',
         img: 'web-dev.png',
-        tools: ['php', 'WordPress', 'HTML', 'CSS', 'JS', 'Vue Js', 'React Js', 'Laravel'],
+        tools: [{title:'php',img:'php.png'}, {title:'WordPress',img:'wordpress.png'}, {title:'HTML',img:'html.png'}, {title:'CSS',img:'css.png'}, {title:'JS',img:'js.png'}, {title:'Vue Js',img:'vue.png'}, {title:'React Js',img:'react.png'}, {title:'Laravel',img:'laravel.png'}],
         desctiption: 'This is Desctiption'
       },
       {
         title: 'Graphics Designing',
         img: 'graphics-design.png',
-        tools: ['Adobe Photoshop', 'Adobe Illustrator', 'Corel Draw', 'HTML/CSS/JS'],
+        tools: [{title:'Adobe Photoshop',img:'ps.png'}, {title:'Adobe Illustrator',img:'ai.png'},{title: 'Corel Draw',img:'coreldraw.png'}, {title:'HTML/CSS/JS',img:'htmljscss.png'}],
         desctiption: 'This is Desctiption'
       },
       {
         title: 'Lead Generation',
         img: 'Lead-Generation-transparent.png',
-        tools: ['Adobe Photoshop', 'Adobe Illustrator', 'Corel Draw', 'HTML/CSS/JS'],
+        tools: [{title:'ZoomInfo',img:'zoominfo.png'}, {title:'hunter.io',img:'hunter.png'},{title: 'Clearbit',img:'clearbit-vector-logo.png'},{title: 'Sales Navigator',img:'salesnavigator.png'},{title:'Name2Email',img:'name2email.jpg'},{title:'Yellow Pages',img:'yellowpages.png'},{title:'Linkedin',img:'linkedin.png'},{title:'Yelp',img:'yelp.png'}],
         desctiption: 'This is Desctiption'
       },
       {
         title: 'Skip Tracing',
         img: 'skip-tracing.jpg',
-        tools: ['Adobe Photoshop', 'Adobe Illustrator', 'Corel Draw', 'HTML/CSS/JS'],
+        tools: [{title:'True People Search',img:'truepeoplw.png'},{title:'Spokeo',img:'spokeo.png'},{title:'Beenverified',img:'beenverified.png'},{title:'US Phonebook',img:'usphonebook.webp'},{title:'White Pages',img:'whitepages.jpeg'}],
         desctiption: 'This is Desctiption'
       }
     ],
@@ -116,7 +116,7 @@ export default new Vuex.Store({
       {
         title: 'mastering mind sets',
         url: 'https://masteringmindsets.org/',
-        img: 'masteringmindset.jpg',
+        img: 'masteringmindset.png',
         technology: 'WordPress',
         workType: 'Website Debugging',
         rating: 5,
